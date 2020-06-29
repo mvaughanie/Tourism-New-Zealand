@@ -1,0 +1,27 @@
+{
+
+    "party": [
+
+        {
+            "id": "0",
+            "title": "1 Person"
+            
+        },
+        {
+            "id": "1",
+            "title": "1-2 People"
+            
+        },
+        {
+            "id": "2",
+            "title": "1-5 People"
+            
+        },
+        {
+            "id": "3",
+            "title": "1-6 People"
+            
+        }
+
+    ]
+}

@@ -1,2 +1,56 @@
+@import 'config';
+@import 'hero'; 
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $background-color;
+    text-align: center;
+}
+
+.form, .submit-div{
+    display: block;
+    text-align: center;
+}
+
+.submit-div{
+    margin-top: 2em;
+}
+
+
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 2em;
+}
+
+input, select, label{
+    width: 400px;
+    color: $secondary-color;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 0.5em 0.5em 0;
+    margin: 0.5em 0.5em 1.5em 0.5em;
+}
+
+.submit{
+    width: 200px;
+    padding: 10px;
+    color: $background-color;
+    background-color: $primary-color;
+    text-align: center;
+}
+
+
+
+
+
+
 
 

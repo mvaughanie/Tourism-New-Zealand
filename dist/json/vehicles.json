@@ -1,0 +1,43 @@
+{
+
+    "vehicles": [
+
+        {
+            "id": "vehicleOne",
+            "title": "Motorbike",
+            "dailyCost": 109,
+            "fuelConsumption": 3.7,
+            "partyId": 0,
+            "dayId": 0
+            
+        },      
+        {
+            "id": "vehicleTwo",
+            "title": "Small Vehicle",
+            "dailyCost": 129,
+            "fuelConsumption": 8.5,
+            "partyId": 1,
+            "dayId": 1
+            
+        },
+        {
+            "id": "vehicleThree",
+            "title": "Large Vehicle",
+            "dailyCost": 144,
+            "fuelConsumption": 9.7,
+            "partyId": 2,
+            "dayId": 2
+            
+        },
+        {
+            "id": "vehicleFour",
+            "title": "Motorhome",
+            "dailyCost": 200,
+            "fuelConsumption": 17,
+            "partyId": 3,
+            "dayId": 3
+            
+        }
+
+    ]
+}
