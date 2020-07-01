@@ -5,47 +5,6 @@
   padding: 0;
 }
 
-.hero-banner {
-  position: relative;
-  height: 50vh;
-}
-
-.hero-banner__image {
-  width: 100%;
-  height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.hero-banner__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
-h1 {
-  font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  text-align: center;
-}
-
-.form, .submit-div {
-  display: block;
-  text-align: center;
-}
-
-.submit-div {
-  margin-top: 2em;
-}
-
 form {
   display: inline-block;
   margin-left: auto;
@@ -68,5 +27,114 @@ input, select, label {
   color: #fff;
   background-color: #000;
   text-align: center;
+}
+
+.hero-banner {
+  position: relative;
+  height: 50vh;
+}
+
+.hero-banner__image {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.filtered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vehicle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px #767576 solid;
+  padding: 3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.vehicle__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.vehicle__details {
+  width: 250px;
+}
+
+.vehicle__figures {
+  text-align: right;
+}
+
+.vehicle__thumbnail {
+  height: 300px;
+  width: 500px;
+  border: 2px #767576 solid;
+  margin-right: 3em;
+}
+
+.vehicle__submit {
+  width: 120px;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767576;
+}
+
+p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767576;
+}
+
+.form, .submit-div {
+  display: block;
+  text-align: center;
+}
+
+.submit-div {
+  margin-top: 2em;
 }
 /*# sourceMappingURL=main.css.map */

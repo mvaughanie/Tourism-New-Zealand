@@ -3,39 +3,47 @@
     "vehicles": [
 
         {
-            "id": "vehicleOne",
+            "id": "v0",
             "title": "Motorbike",
             "dailyCost": 109,
             "fuelConsumption": 3.7,
-            "partyId": 0,
-            "dayId": 0
+            "minParty": 1,
+            "maxParty":1,
+            "minDays": 1,
+            "maxDays": 5
             
         },      
         {
-            "id": "vehicleTwo",
+            "id": "v1",
             "title": "Small Vehicle",
             "dailyCost": 129,
             "fuelConsumption": 8.5,
-            "partyId": 1,
-            "dayId": 1
+            "minParty": 1,
+            "maxParty": 2,
+            "minDays": 1,
+            "maxDays": 10
             
         },
         {
-            "id": "vehicleThree",
+            "id": "v2",
             "title": "Large Vehicle",
             "dailyCost": 144,
             "fuelConsumption": 9.7,
-            "partyId": 2,
-            "dayId": 2
+            "minParty": 1,
+            "maxParty": 5,
+            "minDays": 3,
+            "maxDays": 10
             
         },
         {
-            "id": "vehicleFour",
+            "id": "v3",
             "title": "Motorhome",
             "dailyCost": 200,
             "fuelConsumption": 17,
-            "partyId": 3,
-            "dayId": 3
+            "minParty": 2,
+            "maxParty": 6,
+            "minDays": 2,
+            "maxDays": 15
             
         }
 

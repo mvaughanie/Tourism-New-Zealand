@@ -1,0 +1,42 @@
+.filtered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vehicle{
+    display: flex;
+    border: 2px $secondary-color solid;
+    padding: 3em;
+    width: fit-content;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    
+    &__grid{
+        display: flex;
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+
+    &__details{
+        width: 250px;
+    }
+
+    &__figures{
+        text-align: right;
+    }
+
+    &__thumbnail{
+        height: 300px;
+        width: 500px;
+        border: 2px $secondary-color solid;
+        margin-right: 3em;
+    }
+
+    &__submit{
+        width: 120px;
+        padding: 10px;
+        color: $background-color;
+        background-color: $primary-color;  
+    }
+}
