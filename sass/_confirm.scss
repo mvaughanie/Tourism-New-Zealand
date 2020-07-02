@@ -1,0 +1,29 @@
+.confirm{
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    left: 0;
+    top: 0;
+
+    &__box{
+        width: 40%;
+        background: $background-color;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3em;
+        text-align: center;
+    }
+
+    &__para{
+        padding-bottom: 1em;
+    }
+
+    &__head{
+        padding-bottom: 2em;
+    }
+}
+
