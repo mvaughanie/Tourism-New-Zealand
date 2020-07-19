@@ -1,0 +1,80 @@
+@media only screen and (max-width: 920px){
+
+    .vehicle{
+        flex-direction: column;
+        width: 560px;
+
+            &__thumbnail{
+                margin: 0;
+                width: fit-content;
+                height: auto;
+                justify-content: center;
+                
+            }
+
+            &__grid{
+                justify-content: center;
+            }
+        }
+
+        #make{
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            align-self: center;
+        }
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .hero-banner{
+        height: 100vh;
+    
+        &__image{
+            height: 100vh;
+        }
+    }
+
+    .banner{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+
+    .welcome{
+        padding-left: 0;
+    }
+
+    input, select, label{
+        width: 300px;
+    }
+
+    .confirm{
+        
+        &__box{
+            width: 90%;
+        }
+    }
+
+    .title{
+        text-align: left;
+    }
+
+    .vehicle{
+        width: 98vw;
+    }
+    
+    }
+    
+
+
+
+
+

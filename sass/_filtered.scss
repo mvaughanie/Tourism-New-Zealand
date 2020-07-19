@@ -7,7 +7,7 @@
 .vehicle{
     display: flex;
     border: 2px $secondary-color solid;
-    padding: 3em;
+    padding: 1.5em;
     width: fit-content;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -27,9 +27,6 @@
     }
 
     &__thumbnail{
-        height: 300px;
-        width: 500px;
-        border: 2px $secondary-color solid;
         margin-right: 3em;
     }
 

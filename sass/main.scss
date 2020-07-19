@@ -4,6 +4,8 @@
 @import 'filtered';
 @import 'confirm';
 
+
+
 body{
     margin: 0px;
     padding: 0px; 
@@ -36,6 +38,21 @@ p{
 .submit-div{
     margin-top: 2em;
 }
+
+.banner{
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.welcome{
+    color: $background-color;
+    padding-left: 3em;
+}
+
+@import 'responsive';
 
 
 

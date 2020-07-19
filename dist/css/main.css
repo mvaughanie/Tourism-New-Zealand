@@ -67,7 +67,7 @@ input, select, label {
   display: -ms-flexbox;
   display: flex;
   border: 2px #767576 solid;
-  padding: 3em;
+  padding: 1.5em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -92,9 +92,6 @@ input, select, label {
 }
 
 .vehicle__thumbnail {
-  height: 300px;
-  width: 500px;
-  border: 2px #767576 solid;
   margin-right: 3em;
 }
 
@@ -166,5 +163,97 @@ p {
 
 .submit-div {
   margin-top: 2em;
+}
+
+.banner {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+}
+
+.welcome {
+  color: #fff;
+  padding-left: 3em;
+}
+
+@media only screen and (max-width: 920px) {
+  .vehicle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 560px;
+  }
+  .vehicle__thumbnail {
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vehicle__grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #make {
+    text-align: center;
+    margin-top: 1em;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-banner {
+    height: 100vh;
+  }
+  .hero-banner__image {
+    height: 100vh;
+  }
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .welcome {
+    padding-left: 0;
+  }
+  input, select, label {
+    width: 300px;
+  }
+  .confirm__box {
+    width: 90%;
+  }
+  .title {
+    text-align: left;
+  }
+  .vehicle {
+    width: 98vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */

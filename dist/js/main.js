@@ -1,12 +1,15 @@
 $(function () {
 
     var vehicleArray = [];
-    const el_body = $('body');
     const el_welcome = $('#welcome');
     const el_vehicle = $('#filtered');
     const el_confirm = $('#confirm');
+    const el_banner = $('#banner');
     var fuelPrice = 2;
     var event = new Object();
+
+    var image = document.getElementsByClassName('hero-banner__image');
+    new simpleParallax(image);
 
     function init() {
         $.getJSON('json/vehicles.json', function (data) {
@@ -17,6 +20,8 @@ $(function () {
         addSubmitListener();
         el_vehicle.hide();
         el_confirm.hide();
+        el_banner.hide();
+
     };
 
     //---EVENT LISTENERS----------------------------------------------------------
@@ -31,12 +36,17 @@ $(function () {
             event.days = $('#days').val();
             event.estimatedDistance = $('#estimated-distance').val();
 
-            displayVehicles(vehicleArray);
+            getVehicleByNumberOfPeople(vehicleArray)
 
             $(document).scrollTop(0)
 
+            el_banner.empty();
+            el_banner.append("<h1 class = title > Tourism New Zealand </h1>");
+            el_banner.append("<h3 class = welcome > Hello " + event.name + "</h3>");
+
             el_welcome.hide();
             el_vehicle.show();
+            el_banner.show();
 
         });
     };
@@ -57,7 +67,6 @@ $(function () {
             el_confirm.html(html);
             addCompleteListener();
 
-            // el_vehicle.hide();
             $('body,html').css('overflow','hidden');
             $(document).scrollTop(0)
             el_confirm.show();
@@ -69,12 +78,31 @@ $(function () {
         $('#complete-button').click(function() {
             el_confirm.hide();
             el_vehicle.hide();
+            el_banner.hide();
             el_welcome.show();
+
+
+
             $('body,html').css('overflow','scroll');
             $(document).scrollTop(0)
         });
     };
 
+    //---FILTER OUTPUT RESULTS----------------------------------------------------
+
+    function getVehicleByNumberOfPeople(vehicleArray){
+        let matches = [];
+
+        for (var i = 0; i < vehicleArray.length; i++){
+            if (vehicleArray[i].minParty <= event.people && vehicleArray[i].maxParty >= event.people){
+                if (vehicleArray[i].minDays <= event.days && vehicleArray[i].maxDays >= event.days){
+                matches.push(vehicleArray[i]);
+                }
+            }
+        }
+        console.log(matches);
+        displayVehicles(matches);
+    }
 
     //---DISPLAY OUTPUT DATA------------------------------------------------------
 
@@ -92,7 +120,7 @@ $(function () {
         return `
         <div class="vehicle">
             <div class="vehicle__thumbnail">
-                <!-- <img src="images/small.jpg" alt=""> -->
+                <img src="images/${vehicle.id}_LARGE.jpg" alt="${vehicle.title}">
 
             </div>
             <div class="vehicle__information">
@@ -131,7 +159,7 @@ $(function () {
             <h3 class="confirm__head" >Booking Confirmed</h3>
             <p class="confirm__para" >Thank you ${event.name} for booking a ${event.title}</p>
             <p class="confirm__para" >More information has been sent to your email</p>
-            <p class="confirm__para" >Enjoy New Zealand</p>
+            <p class="confirm__para" >Enjoy New Zealand!</p>
 
             <div class="submit-div">
                 <input class="vehicle__submit" id="complete-button" type="button" value="Accept">
@@ -139,9 +167,6 @@ $(function () {
         </div>
         `
     };
-
-
-
 
 
     init();
